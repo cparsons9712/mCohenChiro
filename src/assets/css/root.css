@@ -739,6 +739,7 @@ html {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
+    background-color: #98b3d2;
   }
   #footer-1154 .cs-container {
     width: 100%;
@@ -791,6 +792,8 @@ html {
     width: 10.5rem;
     height: auto;
     display: block;
+    text-decoration: none;
+    width: 200px;
   }
   #footer-1154 .cs-logo-img {
     width: 100%;
@@ -855,6 +858,27 @@ html {
   #footer-1154 .cs-copyright-link:hover {
     color: var(--primary);
   }
+  .logo-box {
+    align-items: center;
+    text-align: center;
+  }
+  .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1c3c75;
+    font-weight: 700;
+  }
+  .logo-profession {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 7px;
+    color: var(--primary);
+    font-size: 12px;
+  }
+  .cs-li-link {
+    text-decoration: none;
+    color: #4E4B66;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -862,8 +886,33 @@ html {
     flex-direction: row;
     justify-content: space-between;
   }
+  #footer-1154 .cs-logo {
+    text-decoration: none;
+    width: 250px;
+  }
   #footer-1154 .cs-bottom {
     flex-direction: row;
     justify-content: space-between;
+  }
+  #footer-1154 .logo-box {
+    align-items: center;
+    text-align: center;
+  }
+  #footer-1154 .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1c3c75;
+    font-weight: 700;
+  }
+  #footer-1154 .logo-profession {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 7px;
+    color: var(--primary);
+    font-size: 12px;
+  }
+  #footer-1154 .cs-li-link {
+    text-decoration: none;
+    color: #4E4B66;
   }
 }
