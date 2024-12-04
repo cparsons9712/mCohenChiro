@@ -10,7 +10,7 @@
   :root {
     --primary: #1F5A9E;
     --primaryLight: #1F5A9E;
-    --secondary: #001f3f;
+    --secondary: #1c3c75;
     --secondaryLight: #001f3f;
     --headerColor: #1C3C75;
     --bodyTextColor: #4E4B66;
@@ -223,8 +223,6 @@
       /* Chrome 26+, Opera 23+, Firefox 39+ */
         url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-}
-
 /* lato-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -267,6 +265,9 @@
     src: url('../fonts/playfair-display-v37-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
+}
+
+
 /* Reset Margins */
 @media only screen and (min-width: 1024px) {
   body,
@@ -308,7 +309,7 @@ html {
     padding: (20/16rem) (16/16rem);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background-color: #1a1a1a;
+    background-color: #91aecf;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
@@ -356,7 +357,7 @@ html {
 
     .cs-logo {
       width: 40%;
-      max-width: (146/16rem);
+      max-width: (200/16rem);
       height: 100%;
       margin: 0 auto 0 0;
       padding: 0;
@@ -366,6 +367,7 @@ html {
       justify-content: center;
       align-items: center;
       z-index: 10;
+      text-decoration: none;
 
       img {
         width: 100%;
@@ -373,7 +375,33 @@ html {
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
         object-fit: contain;
       }
+
     }
+
+    .logo-box{
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .logo-name{
+        font-family: 'Playfair Display', serif;
+        font-size: (20px);
+        text-decoration: none;
+        color: #1c3c75;
+        font-weight: 700;
+
+    }
+
+    .logo-profession{
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 7px;
+        color: var(--primary);
+        font-size: 12px;
+
+    }
+
+
 
     .cs-toggle {
       width: (56/16rem);
@@ -488,6 +516,7 @@ html {
       opacity: 0;
       transition: transform 0.6s, opacity 0.9s;
 
+
       &:nth-of-type(1) {
         transition-delay: 0.05s;
       }
@@ -539,6 +568,7 @@ html {
       display: inline-block;
       position: relative;
 
+
       &.cs-active {
         color: var(--primary);
       }
@@ -582,6 +612,27 @@ html {
       position: relative;
     }
 
+    .logo-box{
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-name{
+        font-family: 'Playfair Display', serif;
+        font-size: (24/16rem);
+        text-decoration: none;
+        color: #1c3c75;
+        font-weight: 700;
+
+    }
+
+    .logo-profession{
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 7px;
+        color: var(--primary);
+
+    }
+
     .cs-toggle {
       display: none;
     }
@@ -597,13 +648,8 @@ html {
       justify-content: center;
       align-items: center;
       z-index: 100;
+      text-decoration: none;
 
-      img {
-        width: 100%;
-        height: 100%;
-        /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-        object-fit: contain;
-      }
     }
 
     .cs-ul-wrapper {
@@ -637,9 +683,10 @@ html {
       font-size: clamp(0.875rem, 0.6vw, 1rem);
       line-height: 1.5em;
       text-decoration: none;
-      text-transform: uppercase;
+      text-shadow: #4e4b6640 1px 0 2px;
       margin: 0;
-      color: var(--bodyTextColorWhite);
+      color: #4E4B66;
+      font-family: "Lato", sans-serif;
       display: block;
       position: relative;
       transition: color 0.3s;
@@ -691,6 +738,11 @@ html {
           width: 100%;
         }
       }
+    }
+    .cs-nav-button{
+        border-radius: 4px;
+        font-family: "Lato", sans-serif;
+        font-size: small;
     }
   }
 }

@@ -7,7 +7,7 @@
   :root {
     --primary: #1F5A9E;
     --primaryLight: #1F5A9E;
-    --secondary: #001f3f;
+    --secondary: #1c3c75;
     --secondaryLight: #001f3f;
     --headerColor: #1C3C75;
     --bodyTextColor: #4E4B66;
@@ -183,56 +183,56 @@
     src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-}
-/* lato-regular - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* lato-700 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* playfair-display-regular - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/playfair-display-v37-latin-regular.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* playfair-display-700 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/playfair-display-v37-latin-700.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* playfair-display-900 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/playfair-display-v37-latin-900.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  /* lato-regular - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* playfair-display-regular - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playfair-display-v37-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* playfair-display-700 - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/playfair-display-v37-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* playfair-display-900 - latin */
+  @font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/playfair-display-v37-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 }
 /* Reset Margins */
 @media only screen and (min-width: 1024px) {
@@ -268,7 +268,7 @@ html {
     padding: 1.25rem 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background-color: #1a1a1a;
+    background-color: #91aecf;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
@@ -309,7 +309,7 @@ html {
   }
   #cs-navigation .cs-logo {
     width: 40%;
-    max-width: 9.125rem;
+    max-width: 12.5rem;
     height: 100%;
     margin: 0 auto 0 0;
     padding: 0;
@@ -319,12 +319,30 @@ html {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    text-decoration: none;
   }
   #cs-navigation .cs-logo img {
     width: 100%;
     height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
+  }
+  #cs-navigation .logo-box {
+    align-items: center;
+    text-align: center;
+  }
+  #cs-navigation .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1c3c75;
+    font-weight: 700;
+  }
+  #cs-navigation .logo-profession {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 7px;
+    color: var(--primary);
+    font-size: 12px;
   }
   #cs-navigation .cs-toggle {
     width: 3.5rem;
@@ -511,6 +529,22 @@ html {
     gap: 1.5rem;
     position: relative;
   }
+  #cs-navigation .logo-box {
+    align-items: center;
+    text-align: center;
+  }
+  #cs-navigation .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #1c3c75;
+    font-weight: 700;
+  }
+  #cs-navigation .logo-profession {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 7px;
+    color: var(--primary);
+  }
   #cs-navigation .cs-toggle {
     display: none;
   }
@@ -525,12 +559,7 @@ html {
     justify-content: center;
     align-items: center;
     z-index: 100;
-  }
-  #cs-navigation .cs-logo img {
-    width: 100%;
-    height: 100%;
-    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-    object-fit: contain;
+    text-decoration: none;
   }
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
@@ -560,9 +589,10 @@ html {
     font-size: clamp(0.875rem, 0.6vw, 1rem);
     line-height: 1.5em;
     text-decoration: none;
-    text-transform: uppercase;
+    text-shadow: #4e4b6640 1px 0 2px;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    color: #4E4B66;
+    font-family: "Lato", sans-serif;
     display: block;
     position: relative;
     transition: color 0.3s;
@@ -609,6 +639,11 @@ html {
   }
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
+  }
+  #cs-navigation .cs-nav-button {
+    border-radius: 4px;
+    font-family: "Lato", sans-serif;
+    font-size: small;
   }
 }
 /*-- -------------------------- -->
