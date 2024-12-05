@@ -8,7 +8,6 @@
     /* 116px - 164px top */
     /* 60px - 100px  bottom */
     padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
-    background-color: #a53232;
     background-image: linear-gradient(180deg, #91aecf 0%, #fff7f7 88%);
     /* clips the svg wave from overflowing */
     overflow: hidden;
@@ -221,6 +220,8 @@
     gap: clamp(1.5rem, 3vw, 2.5rem);
     position: relative;
     z-index: 1;
+    align-items: center;
+    text-align: center;
   }
   #services-1644 .cs-item:last-of-type:before {
     display: none;
@@ -246,9 +247,9 @@
   }
   #services-1644 .cs-image-group {
     position: relative;
+    height: 150px;
   }
   #services-1644 .cs-icon {
-    width: 3rem;
     height: auto;
   }
   #services-1644 .cs-h2 {
