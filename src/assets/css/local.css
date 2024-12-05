@@ -1,5 +1,5 @@
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       Holistic Support        -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -101,6 +101,11 @@
   #RPsbsr-525 .cs-button-solid:hover:before {
     width: 100%;
   }
+  #RPsbs-525 .holisticList,
+  #RPsbsr-525 .holisticList {
+    margin-bottom: 30px;
+    margin-left: 25px;
+  }
   #RPsbs-525 .cs-image-group,
   #RPsbsr-525 .cs-image-group {
     /* this is how we can scale entire groups using ems.  Font size is tied to the view width, so as the screen gets bigger, so does the font size, and this scales up and down the elements with em values.  Then it stops growing once the font size reaches the defined value of 1em (16px which is default on the html element). Font size changes at desktop */
@@ -185,7 +190,7 @@
   }
 }
 /*-- -------------------------- -->
-<---   Side By Side Reverse     -->
+<---     First Visit            -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -205,6 +210,10 @@
     right: auto;
     left: 0;
     border-color: #f7f7f7;
+  }
+  .listEmp {
+    color: #1C3C75;
+    font-weight: 800;
   }
 }
 /* Small Desktop - 1024px */
