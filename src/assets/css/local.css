@@ -128,22 +128,27 @@
     /* pushes it to the top in the first position */
     order: -1;
   }
+  #RPsbs-525 .cs-image-group img,
+  #RPsbsr-525 .cs-image-group img {
+    border-radius: 40px;
+  }
   #RPsbs-525 .cs-image-group:before,
   #RPsbsr-525 .cs-image-group:before {
     content: "";
     width: 11.625em;
     height: 10.0625em;
-    background: var(--primary);
+    background-color: var(--secondary);
     opacity: 1;
     position: absolute;
     display: block;
     top: 0em;
     left: 0em;
     animation-name: floatAnimation;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    border-radius: 40px;
   }
   #RPsbs-525 .cs-picture,
   #RPsbsr-525 .cs-picture {
@@ -171,8 +176,6 @@
   #RPsbsr-525 .cs-picture-small {
     width: 16.25em;
     height: 14.0625em;
-    border: 0.625em solid #fff;
-    background-color: #fff;
     bottom: 0;
     right: 0;
     animation-name: floatAnimation2;

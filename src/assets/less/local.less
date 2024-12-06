@@ -128,21 +128,30 @@
       /* pushes it to the top in the first position */
       order: -1;
 
+      img {
+        border-radius: 40px;
+      }
+
       &:before {
         content: "";
         width: (186/16em);
         height: (161/16em);
-        background: var(--primary);
+        // background-image: url('../images/stock/chair.png');
+        // background-size: cover;
+        // background-repeat: none;
+        background-color: var(--secondary);
         opacity: 1;
         position: absolute;
         display: block;
         top: (0/16em);
         left: (0/16em);
         animation-name: floatAnimation;
-        animation-duration: 6s;
+        animation-duration: 3s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
+        border-radius: 40px;
+
       }
     }
 
@@ -171,8 +180,8 @@
     .cs-picture-small {
       width: (260/16em);
       height: (225/16em);
-      border: (10/16em) solid #fff;
-      background-color: #fff;
+
+
       bottom: 0;
       right: 0;
       animation-name: floatAnimation2;
