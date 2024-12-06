@@ -4,8 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-
-  .backgroundGradient2{
+  .backgroundGradient2 {
     background-image: url("../images/gradient\ background.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -17,7 +16,6 @@
   #RPsbsr-525 {
     width: 100vw;
     padding: var(--sectionPadding);
-
 
     @keyframes floatAnimation {
       0% {
@@ -75,55 +73,50 @@
         margin-bottom: (32/16rem);
       }
     }
-
     .cs-button-solid {
       font-size: (16/16rem);
       /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
       font-weight: 700;
       text-align: center;
       margin: 0;
       color: #fff;
       min-width: (150/16rem);
-      padding: 0 (24/16rem);
+      padding: 0 (32/16rem);
       background-color: var(--primary);
-      border-radius: (4/16rem);
       display: inline-block;
       position: relative;
       z-index: 1;
       /* prevents padding from adding to the width */
       box-sizing: border-box;
+      transition: color 0.3s;
 
       &:before {
         content: "";
         position: absolute;
         height: 100%;
         width: 0%;
-        background: #000;
+        background: #fff;
         opacity: 1;
         top: 0;
         left: 0;
         z-index: -1;
-        border-radius: (4/16rem);
         transition: width 0.3s;
       }
 
       &:hover {
+        color: #1a1a1a;
         &:before {
           width: 100%;
         }
       }
     }
 
-    .holisticList{
+    .holisticList {
       margin-bottom: 30px;
       margin-left: 25px;
-
     }
-
-
-
 
     .cs-image-group {
       /* this is how we can scale entire groups using ems.  Font size is tied to the view width, so as the screen gets bigger, so does the font size, and this scales up and down the elements with em values.  Then it stops growing once the font size reaches the defined value of 1em (16px which is default on the html element). Font size changes at desktop */
@@ -219,7 +212,6 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #RPsbsr-525 {
-
     .cs-image-group {
       &:before {
         content: "";
@@ -240,10 +232,52 @@
     }
   }
 
-  .listEmp{
-    color:#1C3C75;
+  .listEmp {
+    color: #1c3c75;
     font-weight: 800;
   }
+
+  .cs-button-second {
+    font-size: (16/16rem);
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: (150/16rem);
+    padding: 0 (32/16rem);
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: #98b3d2;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+    }
+
+    &:hover {
+      color: #1a1a1a;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+
 }
 
 /* Small Desktop - 1024px */
@@ -262,7 +296,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  .gradient3{
+  .gradient3 {
     background-image: url("../images/gradient2.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -323,32 +357,32 @@
     .cs-text {
       margin-bottom: (32/16rem);
     }
-
     .cs-button-solid {
       font-size: (16/16rem);
-      font-weight: 700;
-      line-height: (56/16rem);
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
+      font-weight: 700;
+      text-align: center;
       margin: 0;
-      /* 32px - 48px */
-      padding: 0 clamp(2rem, 4vw, 3rem);
-      background-color: var(--primary);
-      overflow: hidden;
       color: #fff;
-      border-radius: (8/16rem);
+      min-width: (150/16rem);
+      padding: 0 (32/16rem);
+      background-color: var(--primary);
       display: inline-block;
       position: relative;
       z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
       transition: color 0.3s;
 
       &:before {
         content: "";
-        width: 0%;
-        height: 100%;
-        background: #1a1a1a;
-        opacity: 1;
-        display: block;
         position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #fff;
+        color: #1a1a1a;
         top: 0;
         left: 0;
         z-index: -1;
@@ -356,8 +390,7 @@
       }
 
       &:hover {
-        color: #fff;
-
+        color: #1a1a1a;
         &:before {
           width: 100%;
         }
@@ -536,145 +569,140 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #reviews-608 {
-      padding: var(--sectionPadding);
+    padding: var(--sectionPadding);
 
-      .cs-container {
-          width: 100%;
-          /* changes to 1440px at tablet */
-          max-width: (550/16rem);
-          margin: auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          /* 48px - 64px */
-          gap: clamp(3rem, 6vw, 4rem);
-      }
+    .cs-container {
+      width: 100%;
+      /* changes to 1440px at tablet */
+      max-width: (550/16rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
 
-      .cs-content {
-          /* set text align to left if content needs to be left aligned */
-          text-align: center;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          /* centers content horizontally, set to flex-start to left align */
-          align-items: center;
-      }
+    .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+    }
 
-      .cs-title {
-          max-width: 20ch;
-      }
+    .cs-title {
+      max-width: 20ch;
+    }
 
-      .cs-card-group {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: (20/16rem);
-      }
+    .cs-card-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: (20/16rem);
+    }
 
-      .cs-item {
-          list-style: none;
-          width: 100%;
-          margin: 0;
-          /* 32px - 48px top & bottom */
-          /* 16px - 32px left & right */
-          padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
-          /* makes padding not affect height and width */
-          box-sizing: border-box;
-          background-color: #f0f0f0;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-      }
+    .cs-item {
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      /* 32px - 48px top & bottom */
+      /* 16px - 32px left & right */
+      padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
+      /* makes padding not affect height and width */
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-      .cs-icon {
-          /* 30px - 40px */
-          width: clamp(1.875rem, 4vw, 2.5rem);
-          height: auto;
-          margin: 0 0 (32/16rem) 0;
-          display: block;
-      }
+    .cs-icon {
+      /* 30px - 40px */
+      width: clamp(1.875rem, 4vw, 2.5rem);
+      height: auto;
+      margin: 0 0 (32/16rem) 0;
+      display: block;
+    }
 
-      .cs-h3 {
-          /* 20px - 25px */
-          font-size: clamp(1.25rem, 4vw, 1.5625rem);
-          line-height: 1.2em;
-          font-weight: 700;
-          margin: 0 0 (24/16rem) 0;
-          color: var(--headerColor);
-      }
+    .cs-h3 {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 4vw, 1.5625rem);
+      line-height: 1.2em;
+      font-weight: 700;
+      margin: 0 0 (24/16rem) 0;
+      color: var(--headerColor);
+    }
 
-      .cs-item-text {
-          /* 14px - 16px */
-          font-size: clamp(0.875rem, 4vw, 1rem);
-          line-height: 1.5em;
-          max-width: (388/16rem);
-          margin: 0 0 (48/16rem) 0;
-          color: var(--bodyTextColor);
-      }
+    .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 4vw, 1rem);
+      line-height: 1.5em;
+      max-width: (388/16rem);
+      margin: 0 0 (48/16rem) 0;
+      color: var(--bodyTextColor);
+    }
 
-      .cs-name {
-          font-size: (20/16rem);
-          line-height: 1.2em;
-          font-weight: 500;
-          margin: auto 0 0 0;
-          color: var(--headerColor);
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          gap: (8/16rem);
-          position: relative;
-          &:before {
-              content: "";
-              width: (8/16rem);
-              height: 1px;
-              background: currentColor;
-              display: block;
-              position: relative;
-          }
+    .cs-name {
+      font-size: (20/16rem);
+      line-height: 1.2em;
+      font-weight: 500;
+      margin: auto 0 0 0;
+      color: var(--headerColor);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: (8/16rem);
+      position: relative;
+      &:before {
+        content: "";
+        width: (8/16rem);
+        height: 1px;
+        background: currentColor;
+        display: block;
+        position: relative;
       }
+    }
   }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #reviews-608 {
-      .cs-container {
-          max-width: (1440/16rem);
-      }
+    .cs-container {
+      max-width: (1440/16rem);
+    }
 
-      .cs-card-group {
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-      }
+    .cs-card-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-      .cs-item {
-          width: 48.5%;
-      }
+    .cs-item {
+      width: 48.5%;
+    }
   }
 }
 
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #reviews-608 {
-      .cs-card-group {
-          align-items: stretch;
-          justify-content: center;
-      }
+    .cs-card-group {
+      align-items: stretch;
+      justify-content: center;
+    }
 
-      .cs-item {
-          width: clamp(23.45%, 23.2vw, 23.9%);
-      }
+    .cs-item {
+      width: clamp(23.45%, 23.2vw, 23.9%);
+    }
   }
 }
-
-
-
-
-
 
 /*-- -------------------------- -->
 <---          Contact           -->
@@ -690,8 +718,6 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-
-
 
     .cs-container {
       width: 100%;
@@ -863,27 +889,29 @@
 
     .cs-button-solid {
       font-size: (16/16rem);
-      line-height: (56/16rem);
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
       font-weight: 700;
-      overflow: hidden;
+      text-align: center;
       margin: 0;
       color: #fff;
-      padding: 0 (48/16rem);
-      border-radius: (30/16rem);
+      min-width: (150/16rem);
+      padding: 0 (32/16rem);
       background-color: var(--primary);
       display: inline-block;
       position: relative;
       z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
       transition: color 0.3s;
 
       &:before {
         content: "";
         position: absolute;
-        display: block;
         height: 100%;
         width: 0%;
-        background: #1a1a1a;
+        background: #98b3d2;
         opacity: 1;
         top: 0;
         left: 0;
@@ -892,7 +920,7 @@
       }
 
       &:hover {
-        color: var(--primary);
+        color: #1a1a1a;
         &:before {
           width: 100%;
         }
@@ -905,7 +933,8 @@
       border: none;
 
       &:hover {
-        color: #fff;
+        color: #150101;
+
         cursor: pointer;
       }
     }
