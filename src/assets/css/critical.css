@@ -38,7 +38,7 @@
     font-size: 1rem;
     line-height: 1.2em;
     text-transform: uppercase;
-    text-align: inherit;
+    text-align: center;
     letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);

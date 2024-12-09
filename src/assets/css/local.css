@@ -79,7 +79,7 @@
     text-decoration: none;
     font-weight: 700;
     text-align: center;
-    margin: 0;
+    margin: auto;
     color: #fff;
     min-width: 9.375rem;
     padding: 0 2rem;
@@ -202,6 +202,10 @@
   #RPsbsr-525 .cs-image-group {
     font-size: min(1.1vw, 1em);
   }
+  #RPsbs-525 .cs-button-solid,
+  #RPsbsr-525 .cs-button-solid {
+    margin: 0;
+  }
 }
 /*-- -------------------------- -->
 <---     First Visit            -->
@@ -233,7 +237,7 @@
     text-decoration: none;
     font-weight: 700;
     text-align: center;
-    margin: 0;
+    margin: auto;
     color: #fff;
     min-width: 9.375rem;
     padding: 0 2rem;
@@ -269,6 +273,9 @@
   #RPsbsr-525 .cs-content {
     /* sends it to the left in the first position */
     order: -1;
+  }
+  #RPsbsr-525 .cs-button-second {
+    margin: 0;
   }
 }
 /*-- -------------------------- -->
@@ -338,7 +345,7 @@
     text-decoration: none;
     font-weight: 700;
     text-align: center;
-    margin: 0;
+    margin: auto;
     color: #fff;
     min-width: 9.375rem;
     padding: 0 2rem;
@@ -511,6 +518,9 @@
   #sbs-1982 .cs-image-group {
     height: auto;
     min-height: 42.5rem;
+  }
+  #sbs-1982 .cs-button-solid {
+    margin: 0;
   }
 }
 /*-- -------------------------- -->
