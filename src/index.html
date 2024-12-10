@@ -504,7 +504,7 @@ eleventyNavigation:
       </ul>
     </div>
     <!--Form-->
-    <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post">
+    <form data-netlify="true" class="cs-form" id="cs-form-1388" name="Contact Form" method="post">
       <h3 class="cs-h3">Make Appointment</h3>
       <label class="cs-label">
         Name
@@ -549,7 +549,8 @@ eleventyNavigation:
           placeholder="Write message..."
         ></textarea>
       </label>
-      <button class="cs-button-solid cs-submit" type="submit">
+      <div data-netlify-recaptcha="true"></div>
+<button class="cs-button-solid cs-submit" type="submit">
         Send Message
       </button>
     </form>
