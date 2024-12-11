@@ -30,6 +30,7 @@
     font-weight: 700;
     color: var(--primary);
     text-align: inherit;
+    font-family: 'Lato';
   }
   .cs-title {
     position: relative;
@@ -50,6 +51,7 @@
     line-height: 1.5em;
     color: var(--bodyTextColor);
     text-align: inherit;
+    font-family: 'Lato';
   }
   .cs-button-solid {
     z-index: 1;
@@ -67,6 +69,7 @@
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
+    font-family: 'Lato';
   }
   .cs-button-solid:hover {
     color: #fff;
@@ -141,14 +144,17 @@
     margin: 0;
     font-size: 1rem;
     line-height: 1.5em;
+    font-family: "Lato", sans-serif;
   }
   p,
   li {
     color: #353535;
+    font-family: "Lato", sans-serif;
   }
   a:hover,
   button:hover {
     cursor: pointer;
+    font-family: "Lato", sans-serif;
   }
   .skip {
     z-index: -1111111;
@@ -156,33 +162,6 @@
     top: 0;
     left: 0;
     opacity: 0;
-  }
-  /* roboto-regular - latin */
-  @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-700 - latin */
-  @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-900 - latin */
-  @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 900;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* lato-regular - latin */
   @font-face {
