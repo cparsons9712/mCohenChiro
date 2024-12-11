@@ -1,7 +1,7 @@
 ---
 title: "Chiropractor | Dr.Matthew Cohen | Madison Heights, MI"
 description: "Looking for effective pain relief and personalized care? Dr. Cohen combines traditional medicine with a holistic approach to pain management, helping you live a healthy, pain-free life without reliance on addictive substances. Schedule a consultation today!"
-preloadImg: "./assets/images/stock/backAdj.png"
+preloadImg: "./assets/images/Converted/backAdj.webp"
 permalink: "/"
 tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -102,13 +102,18 @@ eleventyNavigation:
       <!--Mobile-->
 
       <img
-        aria-hidden="true"
-        decoding="async"
-        src="./assets/images/Converted/backAdj.webp"
-        alt="Back Adjustment"
-        width="570"
-        height="701"
-      />
+      aria-hidden="true"
+      decoding="async"
+      src="./assets/images/Converted/backAdj.webp"
+      srcset="
+        ./assets/images/Converted/backAdj-300w.webp 300w,
+        ./assets/images/Converted/backAdj-570w.webp 570w
+      "
+      sizes="(max-width: 600px) 300px, 570px"
+      alt="Back Adjustment"
+      width="570"
+      height="701"
+    />
     </picture>
   </div>
   <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
