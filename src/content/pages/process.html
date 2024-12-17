@@ -1,30 +1,26 @@
 ---
-title: 'About | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'process/'
+title: "About | Code Stitch Web Designs"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "process/"
 eleventyNavigation:
-    key: Our Process
-    order: 300
+  key: Our Process
+  order: 300
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-{% endblock %}
-
-{% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">Our Process</h1>
-        <p>Paragraph text here</p>
-
-
-    </section>
-
+<section id="int-hero">
+  <h1 id="home-h">What to Expect on your First Visit with us</h1>
+  <p>
+    From pain relief to long-term wellness, explore answers to your questions
+    about the conditions we treat and the care we provide.
+  </p>
+</section>
 
 {% endblock %}
