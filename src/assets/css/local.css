@@ -504,6 +504,11 @@
     color: #f7f7f7;
   }
 }
+@media only screen and (max-width: 48rem) {
+  .gradient3 {
+    background-image: url("../images/phoneGradient.svg");
+  }
+}
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #sbs-1982 .cs-container {
