@@ -1,97 +1,227 @@
-/* PAGE-SPECIFIC STYLES FOR THE REVIEWS PAGE */
 /*-- -------------------------- -->
-<---           Reviews          -->
+<---          Reviews           -->
 <--- -------------------------- -*/
-/* Mobile */
+
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews {
+  #reviews-608 {
+    padding: var(--sectionPadding);
+  }
+  #reviews-608 .cs-container {
+    width: 100%;
+    /* changes to 1440px at tablet */
+    max-width: 34.375rem;
     margin: auto;
-    padding-top: 7.5rem;
-    padding-bottom: 3.125rem;
-  }
-  #reviews .container {
-    max-width: 82.5rem;
-    width: 96%;
-  }
-  #reviews .review {
-    position: relative;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    border-radius: 0.3125rem;
-    margin: auto;
-    margin-bottom: 6.25rem;
-    background: #fff;
-    max-width: 25.625rem;
-    width: 100%;
-    padding: 4rem 1.875rem 1.125rem 1.875rem;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-  }
-  #reviews .review .profile {
-    position: absolute;
-    top: calc(-51 / 16 * 1rem);
-    left: 1.875rem;
-    display: block;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    margin-left: 0;
-    height: 6.1875rem;
-    width: 6.1875rem;
-  }
-  #reviews .review p {
-    margin-bottom: 1.75rem;
-    line-height: 1.5em;
-    text-align: left;
-  }
-  #reviews .review .star-group {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #e7e7e7;
-    margin-top: auto;
-    padding-top: 1rem;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  #reviews .review .star-group .name {
-    display: block;
-    line-height: 1.5rem;
-    font-weight: bold;
-    color: #1a1a1a;
-    text-align: left;
+  #reviews-608 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
   }
-  #reviews .review .star-group .desc {
-    display: block;
-    font-weight: 400;
-    color: #575757;
+
+  #reviews-608 .cs-title {
+    /* cs-title override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This second cs-title is a section specific override that stays inside this stitch */
+    max-width: 20ch;
   }
-  #reviews .review .star-group img {
-    display: block;
+  #reviews-608 .cs-card-group {
+    width: 100%;
     margin: 0;
-    height: 0.9375rem;
-    width: 5.6875rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
   }
-  #reviews .review:last-of-type {
-    margin-bottom: 0;
+  #reviews-608 .cs-item {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    /* 32px - 48px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
+    /* makes padding not affect height and width */
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #reviews-608 .cs-icon {
+    /* 30px - 40px */
+    width: clamp(1.875rem, 4vw, 2.5rem);
+    height: auto;
+    margin: 0 0 2rem 0;
+    display: block;
+  }
+  #reviews-608 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 4vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    color: var(--headerColor);
+  }
+  #reviews-608 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 4vw, 1rem);
+    line-height: 1.5em;
+    max-width: 24.25rem;
+    margin: 0 0 3rem 0;
+    color: var(--bodyTextColor);
+  }
+  #reviews-608 .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: auto 0 0 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+  }
+  #reviews-608 .cs-name:before {
+    content: "";
+    width: 0.5rem;
+    height: 1px;
+    background: currentColor;
+    display: block;
+    position: relative;
   }
 }
-/* Tablet */
+/* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews {
-    padding-top: 9.375rem;
-    padding-bottom: 3.125rem;
+  #reviews-608 .cs-container {
+    max-width: 90rem;
   }
-  #reviews .container {
-    display: flex;
+  #reviews-608 .cs-card-group {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
-    font-size: min(1.4vw, 1em);
-    column-gap: 1.875rem;
   }
-  #reviews .review {
+  #reviews-608 .cs-item {
+    width: 48.5%;
+  }
+}
+/* Small Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #reviews-608 .cs-card-group {
+    align-items: stretch;
+    justify-content: center;
+  }
+  #reviews-608 .cs-item {
+    width: clamp(23.45%, 23.2vw, 23.9%);
+  }
+}
+
+/*-- ------------------------------- -->
+<---          Single Review           -->
+<--- --------------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-545 {
+    padding-bottom: 50px;
+  }
+  #reviews-545 .cs-container {
+    width: 100%;
+
+    margin: auto;
+  }
+  #reviews-545 .cs-review-group {
+    /* padding left and right change to a clamp at tablet */
+    padding: 4rem 1.25rem;
+    background-image: url('../images/shortgradient.svg');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-545 .cs-picture {
+    display: block;
+    position: relative;
+    /* 144px - 256px */
+    width: clamp(9rem, 21vw, 16rem);
+    /* prevents flexbox from squishing it */
+    flex: none;
+    /* makes it square */
+    aspect-ratio: 1;
+  }
+  #reviews-545 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #reviews-545 .cs-review {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: left;
+    font-weight: 400;
+    /* 20px - 36px */
+    margin: 0 0 clamp(1.25rem, 4vw, 2.25rem) 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #reviews-545 .cs-name {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--bodyTextColorWhite);
+    display: block;
+  }
+  #reviews-545 .cs-desc {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: 400;
     margin: 0;
-    margin-bottom: 9.375rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
   }
-  #reviews .review:last-of-type {
-    margin-bottom: 9.375rem;
+  #reviews-545 .cs-pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-545 .cs-review-group {
+    /* 60px - 92px left & right */
+    padding: 4rem clamp(3.75rem, 8vw, 5.75rem);
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #reviews-545 .cs-picture {
+    /* sends it to the right in the 2nd position */
+    order: 2;
   }
 }
