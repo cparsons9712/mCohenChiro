@@ -160,22 +160,18 @@
     #RPsbs-1310 .cs-box,
     #RPsbsr-1310 .cs-box {
         text-align: left;
-        width: 70%;
-        max-width: 19rem;
-        /* 20px - 40px */
-        padding: clamp(1.25rem, 4vw, 2.5rem);
-        /* prevents padding and border from affecting height and width */
+        padding: 30px;
         box-sizing: border-box;
-        background-color: #1a1a1a;
+        background-color: #1F5A9E;
         display: inline-flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        gap: 0.5rem;
         position: absolute;
         right: 0;
         bottom: 0;
         z-index: 10;
+        border-radius: 4px;
     }
     #RPsbs-1310 .cs-desc,
     #RPsbsr-1310 .cs-desc {
@@ -185,9 +181,10 @@
         font-weight: 700;
         text-align: inherit;
         width: 100%;
-        color: var(--bodyTextColorWhite);
+        color: white;
         position: relative;
         z-index: 10;
+        font-family: 'Playfair display';
     }
     #RPsbs-1310 .cs-graphic,
     #RPsbsr-1310 .cs-graphic {
@@ -407,41 +404,15 @@
       color: var(--bodyTextColor);
       text-align: inherit;
     }
-    #services-1259 .cs-button-solid {
-      font-size: 1rem;
-      /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-      font-weight: 700;
-      min-width: 9.375rem;
-      margin: 0;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-      padding: 0 1.5rem;
-      color: #fff;
-      background-color: var(--primary);
-      overflow: hidden;
-      border-radius: 0.25rem;
-      text-decoration: none;
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      text-align: center;
-    }
+
     #services-1259 .cs-button-solid:before {
-      content: "";
-      width: 0%;
-      height: 100%;
-      background: #000;
-      opacity: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: width 0.3s;
+
+      background: #91aecf;
+      color: var(--primary);
+      border-radius: 4px;
+
     }
-    #services-1259 .cs-button-solid:hover:before {
-      width: 100%;
-    }
+
   }
   /* Tablet - 1768px */
   @media only screen and (min-width: 48rem) {
