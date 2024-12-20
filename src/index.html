@@ -566,19 +566,6 @@ eleventyNavigation:
   </div>
 </section>
 
-<!-- Botpoison Events -->
-<script>
-  var formElement = document.getElementById("form");
-  var buttonElement = document.getElementById("button");
-  formElement.addEventListener("botpoison-challenge-start", function () {
-    buttonElement.setAttribute("disabled", "disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-success", function () {
-    buttonElement.removeAttribute("disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-error", function () {
-    buttonElement.removeAttribute("disabled");
-  });
-</script>
+
 
 {% endblock %}
