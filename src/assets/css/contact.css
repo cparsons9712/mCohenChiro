@@ -1,45 +1,5 @@
-body.dark-mode .cs-button-solid {
-  background-color: var(--secondaryLight);
-  color: #1a1a1a;
-}
-body.dark-mode .cs-button-solid:before {
-  background-color: #fff;
-}
-.cs-button-solid {
-  font-size: 1rem;
-  /* 46px - 56px */
-  line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-  text-decoration: none;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  color: #fff;
-  min-width: 9.375rem;
-  padding: 0 1.5rem;
-  background-color: var(--primary);
-  border-radius: 0.25rem;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  /* prevents padding from adding to the width */
-  box-sizing: border-box;
-}
-.cs-button-solid:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  background: #000;
-  opacity: 1;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 0.25rem;
-  transition: width 0.3s;
-}
-.cs-button-solid:hover:before {
-  width: 100%;
-}
+
+
 /* ^^^ remove everything above this comment and place in global stylesheet ^^^ */
 /*-- -------------------------- -->
 <---          Banner            -->
@@ -216,17 +176,11 @@ body.dark-mode .cs-button-solid:before {
       margin-bottom: 0.75rem;
       font-family: inherit;
   }
-  #ContactForm-327 .cs-submit {
-      text-transform: uppercase;
-      width: 17.6875rem;
-      background-color: var(--secondaryLight);
-      color: var(--headerColor);
-      border: none;
-      transition: color 0.3s;
-  }
+
   #ContactForm-327 .cs-submit:hover {
       cursor: pointer;
       color: #fff;
+      background-color:#97B2D1 ;
   }
   #ContactForm-327 .cs-map {
       width: 100%;
@@ -431,18 +385,7 @@ body.dark-mode .cs-button-solid:before {
       border-radius: 0.75rem;
       transition: border-bottom 0.3s;
   }
-  #ContactFAQ-327 .cs-faq-item.active .cs-button {
-      background-color: var(--primary);
-      color: var(--secondaryLight);
-  }
-  #ContactFAQ-327 .cs-faq-item.active .cs-button:before {
-      background-color: var(--secondaryLight);
-      transform: rotate(315deg);
-  }
-  #ContactFAQ-327 .cs-faq-item.active .cs-button:after {
-      background-color: var(--secondaryLight);
-      transform: rotate(-315deg);
-  }
+
   #ContactFAQ-327 .cs-faq-item.active .cs-item-p {
       height: auto;
       /* 20px - 24px top & bottom */
@@ -685,4 +628,3 @@ body.dark-mode .cs-button-solid:before {
       display: none;
   }
 }
-                              
