@@ -28,6 +28,9 @@ eleventyNavigation:
   crossorigin
 />
 
+<!-- Script for botpoison- Form spam protection -->
+<script src="https://unpkg.com/@botpoison/browser" async></script>
+
 <!-- Script for Netlify Identity -->
 <script
   defer
@@ -510,7 +513,7 @@ eleventyNavigation:
       </ul>
     </div>
     <!--Form-->
-    <form data-netlify="true" class="cs-form" id="cs-form-1388" name="Contact Form" method="post" data-netlify-recaptcha="true" netlify>
+    <form data-netlify="true" class="cs-form" id="cs-form-1388" name="Contact Form" method="post" netlify data-botpoison-public-key="pk_c939b591-567c-4ba0-a681-bbd3137991dd">
       <h3 class="cs-h3">Request an Appointment</h3>
       <label class="cs-label">
         Name
@@ -555,12 +558,27 @@ eleventyNavigation:
           placeholder="Write message..."
         ></textarea>
       </label>
-      <div data-netlify-recaptcha="true"></div>
+      <!-- <div data-netlify-recaptcha="true"></div> -->
 <button class="cs-button-solid cs-submit" type="submit">
         Send Message
       </button>
     </form>
   </div>
 </section>
+
+<!-- Botpoison Events -->
+<script>
+  var formElement = document.getElementById("form");
+  var buttonElement = document.getElementById("button");
+  formElement.addEventListener("botpoison-challenge-start", function () {
+    buttonElement.setAttribute("disabled", "disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-success", function () {
+    buttonElement.removeAttribute("disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-error", function () {
+    buttonElement.removeAttribute("disabled");
+  });
+</script>
 
 {% endblock %}
