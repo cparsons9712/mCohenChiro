@@ -84,8 +84,8 @@
   color: var(--button-hover-bg);
 }
 
-#RPsbs-525 .cs-button-solid:before,
-#RPsbsr-525 .cs-button-solid:before {
+#RPsbs-525 .cs-button-solid:before
+ {
   background: #fff;
 }
 
@@ -179,8 +179,8 @@
   #RPsbsr-525 .cs-image-group {
     font-size: min(1.1vw, 1em);
   }
-  #RPsbs-525 .cs-button-solid,
-  #RPsbsr-525 .cs-button-solid {
+  #RPsbs-525 .cs-button-solid
+ {
     margin: 0;
   }
 }
@@ -748,7 +748,7 @@
 
     background: #98b3d2;
     opacity: 1;
-   
+
   }
   #contact-1388 .cs-button-solid:hover {
     color: #1a1a1a;
