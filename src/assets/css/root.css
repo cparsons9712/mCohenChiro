@@ -30,7 +30,7 @@
     font-weight: 700;
     color: var(--primary);
     text-align: inherit;
-    font-family: 'Lato';
+    font-family: 'Lato' sans serif;
   }
   .cs-title {
     position: relative;
@@ -89,7 +89,7 @@
     height: 100%;
     width: 0;
     transition: width 0.3s;
-    
+
   }
   .cs-hide-on-mobile {
     display: none;
