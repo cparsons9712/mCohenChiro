@@ -83,6 +83,7 @@
     background-color: var(--primary);
     display: inline-block;
     position: relative;
+    font-family: "Lato", sans-serif;
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
@@ -99,12 +100,14 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+    font-family: "Lato", sans-serif;
   }
   #hero-855 .cs-button-solid:hover {
     color: #1a1a1a;
   }
   #hero-855 .cs-button-solid:hover:before {
     width: 100%;
+    font-family: "Lato", sans-serif;
   }
   #hero-855 .cs-picture {
     width: 100%;

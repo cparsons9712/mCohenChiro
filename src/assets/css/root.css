@@ -19,6 +19,17 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+
+    --button-font: "Lato", sans-serif;
+    --button-font-size: 1rem;
+    --button-line-height: clamp(2.875em, 5.5vw, 3.5em);
+    --button-padding: 0 2rem;
+    --button-min-width: 9.375rem;
+    --button-bg: var(--primary);
+    --button-color: #000;
+    --button-hover-color: #fff;
+    --button-hover-bg: #1a1a1a;
+    --button-transition: 0.3s;
   }
   .cs-topper {
     display: block;
@@ -57,26 +68,26 @@
     z-index: 1;
     position: relative;
     display: inline-block;
-    background-color: var(--primary);
     width: auto;
-    padding: 0 1.875rem;
+    padding: var(--button-padding);
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 3.125em;
+    
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
     font-weight: bold;
-    color: #000;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
+    color: var(--button-color);
+    background-color: var(--button-bg);
     text-align: center;
+    font-family: var(--button-font);
+    box-sizing: border-box;
+    transition: color var(--button-transition);
+    border-radius: 4px;
+  }
 
-  }
   .cs-button-solid:hover {
-    color: #fff;
+    color: var(--button-hover-color);
   }
-  .cs-button-solid:hover:before {
-    width: 100%;
-  }
+
   .cs-button-solid:before {
     z-index: -1;
     position: absolute;
@@ -85,11 +96,15 @@
     content: "";
     opacity: 1;
     display: block;
-    background-color: #000;
+    background-color: var(--button-hover-bg);
     height: 100%;
     width: 0;
-    transition: width 0.3s;
+    transition: width var(--button-transition);
+    border-radius: 4px;
+  }
 
+  .cs-button-solid:hover:before {
+    width: 100%;
   }
   .cs-hide-on-mobile {
     display: none;
@@ -583,49 +598,22 @@ html {
   }
   #cs-navigation .cs-li-link.cs-active {
     color: var(--primary);
-  }
-  #cs-navigation .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    min-width: 9.375rem;
-    padding: 0 2rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    transition: color 0.3s;
-  }
-  #cs-navigation .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #fff;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #cs-navigation .cs-button-solid:hover {
-    color: #1a1a1a;
-  }
-  #cs-navigation .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #cs-navigation .cs-nav-button {
-    border-radius: 4px;
-    font-family: "Lato", sans-serif;
-    font-size: small;
-  }
+  }/* Specific Styles for Navigation Buttons */
+#cs-navigation .cs-button-solid {
+  font-weight: 700;
+  color: #fff;
+  min-width: var(--button-min-width);
+}
+
+#cs-navigation .cs-button-solid:hover {
+  color: var(--button-hover-bg);
+}
+
+#cs-navigation .cs-button-solid:before {
+  background: #fff;
+}
+
+
 }
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
