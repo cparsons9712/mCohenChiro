@@ -503,6 +503,9 @@ html {
     position: fixed;
     z-index: 10000;
   }
+  #cs-navigation .li-link-contact {
+    display: none !important;
+  }
   #cs-navigation .cs-container {
     width: 100%;
     /* same height as the cs-ul-wrapper */
