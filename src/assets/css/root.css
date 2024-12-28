@@ -214,48 +214,6 @@
     src: url('../fonts/playfair-display-v37-latin-900.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-
-  .cs-button-second {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: auto;
-    color: #fff;
-    min-width: 9.375rem;
-    padding: 0 2rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    transition: color 0.3s;
-    border: none;
-    border-radius: 4px;
-  }
-  .cs-button-second:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #98b3d2;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-    border: none;
-    border-radius: 4px;
-  }
-  .cs-button-second:hover {
-    color: #1a1a1a;
-  }
-  .cs-button-second:hover:before {
-    width: 100%;
-  }
 }
 /* Reset Margins */
 @media only screen and (min-width: 1024px) {
