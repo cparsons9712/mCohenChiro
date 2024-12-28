@@ -176,7 +176,7 @@
     #RPsbs-1310 .cs-desc,
     #RPsbsr-1310 .cs-desc {
         /* 16px - 31px */
-        font-size: clamp(1rem, 2.5vw, 1.9375rem);
+        font-size: clamp(2rem, 2.5vw, 1.9375rem);
         line-height: 1.2em;
         font-weight: 700;
         text-align: inherit;
@@ -184,7 +184,7 @@
         color: white;
         position: relative;
         z-index: 10;
-        font-family: 'Playfair display';
+        font-family: 'Playfair Display';
     }
     #RPsbs-1310 .cs-graphic,
     #RPsbsr-1310 .cs-graphic {

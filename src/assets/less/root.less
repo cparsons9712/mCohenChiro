@@ -8,13 +8,13 @@
 @media only screen and (min-width: 0rem) {
   // Website colors
   :root {
-    --primary: #1F5A9E;
-    --primaryLight: #1F5A9E;
+    --primary: #1f5a9e;
+    --primaryLight: #1f5a9e;
     --secondary: #1c3c75;
     --secondaryLight: #001f3f;
-    --headerColor: #1C3C75;
-    --bodyTextColor: #4E4B66;
-    --bodyTextColorWhite: 4E4B66;
+    --headerColor: #1c3c75;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: 4e4B66;
 
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -24,7 +24,6 @@
 
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-
   }
 
   // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
@@ -38,7 +37,7 @@
     font-weight: 700;
     color: var(--primary);
     text-align: inherit;
-    font-family: 'Lato';
+    font-family: "Lato";
   }
 
   .cs-title {
@@ -50,7 +49,7 @@
     font-weight: 900;
     color: var(--headerColor);
     text-align: inherit;
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
   }
 
   .cs-text {
@@ -61,7 +60,7 @@
     line-height: 1.5em;
     color: var(--bodyTextColor);
     text-align: inherit;
-    font-family: 'Lato';
+    font-family: "Lato";
   }
 
   // Button - can be replaced using CodeStitch's "Button" Stitches
@@ -81,7 +80,7 @@
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
-    font-family: 'Lato';
+    font-family: "Lato";
     border-radius: 4px;
     border: none;
 
@@ -89,7 +88,7 @@
       color: var(--primary);
       border-radius: 4px;
       box-shadow: 10px 5px 5px var(--primary);
-      border: 1px solid var(--primary) ;
+      border: 1px solid var(--primary);
       &:before {
         width: 100%;
         border-radius: 4px;
@@ -104,7 +103,7 @@
       content: "";
       opacity: 1;
       display: block;
-      background-color: #EFF3F8;
+      background-color: #eff3f8;
       border-radius: 4px;
       height: 100%;
       // box-shadow: 10px 5px 5px var(--primary);
@@ -205,51 +204,49 @@
   }
   // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-
-/* lato-regular - latin */
-@font-face {
+  /* lato-regular - latin */
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../fonts/lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* lato-700 - latin */
   @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../fonts/lato-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
   /* playfair-display-regular - latin */
-@font-face {
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/playfair-display-v37-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../fonts/playfair-display-v37-latin-regular.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* playfair-display-700 - latin */
-@font-face {
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/playfair-display-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../fonts/playfair-display-v37-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* playfair-display-900 - latin */
-@font-face {
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/playfair-display-v37-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("../fonts/playfair-display-v37-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-
 }
-
 
 /* Reset Margins */
 @media only screen and (min-width: 1024px) {
@@ -292,7 +289,7 @@ html {
     padding: (20/16rem) (16/16rem);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background-color: #97B2D1;
+    background-color: #97b2d1;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
@@ -358,33 +355,27 @@ html {
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
         object-fit: contain;
       }
-
     }
 
-    .logo-box{
-        align-items: center;
-        text-align: center;
-
+    .logo-box {
+      align-items: center;
+      text-align: center;
     }
 
-    .logo-name{
-        font-family: 'Playfair Display', serif;
-        font-size: (20px);
-        text-decoration: none;
-        color: #1c3c75;
-        font-weight: 700;
-
+    .logo-name {
+      font-family: "Playfair Display", serif;
+      font-size: (20px);
+      text-decoration: none;
+      color: #1c3c75;
+      font-weight: 700;
     }
 
-    .logo-profession{
-        font-family: 'Lato', sans-serif;
-        letter-spacing: 7px;
-        color: var(--primary);
-        font-size: 12px;
-
+    .logo-profession {
+      font-family: "Lato", sans-serif;
+      letter-spacing: 7px;
+      color: var(--primary);
+      font-size: 12px;
     }
-
-
 
     .cs-toggle {
       width: (56/16rem);
@@ -499,7 +490,6 @@ html {
       opacity: 0;
       transition: transform 0.6s, opacity 0.9s;
 
-
       &:nth-of-type(1) {
         transition-delay: 0.05s;
       }
@@ -551,7 +541,6 @@ html {
       display: inline-block;
       position: relative;
 
-
       &.cs-active {
         color: var(--primary);
       }
@@ -582,7 +571,7 @@ html {
     position: fixed;
     z-index: 10000;
 
-    .li-link-contact{
+    .li-link-contact {
       display: none !important;
     }
 
@@ -599,25 +588,23 @@ html {
       position: relative;
     }
 
-    .logo-box{
-        align-items: center;
-        text-align: center;
+    .logo-box {
+      align-items: center;
+      text-align: center;
     }
 
-    .logo-name{
-        font-family: 'Playfair Display', serif;
-        font-size: (24/16rem);
-        text-decoration: none;
-        color: #1c3c75;
-        font-weight: 700;
-
+    .logo-name {
+      font-family: "Playfair Display", serif;
+      font-size: (24/16rem);
+      text-decoration: none;
+      color: #1c3c75;
+      font-weight: 700;
     }
 
-    .logo-profession{
-        font-family: 'Lato', sans-serif;
-        letter-spacing: 7px;
-        color: var(--primary);
-
+    .logo-profession {
+      font-family: "Lato", sans-serif;
+      letter-spacing: 7px;
+      color: var(--primary);
     }
 
     .cs-toggle {
@@ -636,7 +623,6 @@ html {
       align-items: center;
       z-index: 100;
       text-decoration: none;
-
     }
 
     .cs-ul-wrapper {
@@ -672,7 +658,7 @@ html {
       text-decoration: none;
       text-shadow: #4e4b6640 1px 0 2px;
       margin: 0;
-      color: #4E4B66;
+      color: #4e4b66;
       font-family: "Lato", sans-serif;
       display: block;
       position: relative;
@@ -726,10 +712,10 @@ html {
         }
       }
     }
-    .cs-nav-button{
-        border-radius: 4px;
-        font-family: "Lato", sans-serif;
-        font-size: small;
+    .cs-nav-button {
+      border-radius: 4px;
+      font-family: "Lato", sans-serif;
+      font-size: small;
     }
   }
 }
@@ -754,8 +740,6 @@ html {
     background-repeat: no-repeat;
     background-position: bottom;
 
-
-
     h1 {
       position: relative;
       margin: 0 auto;
@@ -766,7 +750,7 @@ html {
       font-size: (35px);
       color: 1c3c75;
       text-align: center;
-      font-family: 'playfair-display-700';
+      font-family: "Playfair Display";
     }
 
     p {
@@ -775,7 +759,7 @@ html {
       margin-bottom: (30/16rem);
       font-size: 20px;
       width: 75%;
-      color: #4E4B66;
+      color: #4e4b66;
       text-align: center;
     }
 
@@ -964,33 +948,30 @@ html {
     }
   }
 
-  .logo-box{
+  .logo-box {
     align-items: center;
     text-align: center;
+  }
 
-}
-
-.logo-name{
-    font-family: 'Playfair Display', serif;
+  .logo-name {
+    font-family: "Playfair Display", serif;
     font-size: (20px);
     text-decoration: none;
     color: #1c3c75;
     font-weight: 700;
+  }
 
-}
-
-.logo-profession{
-    font-family: 'Lato', sans-serif;
+  .logo-profession {
+    font-family: "Lato", sans-serif;
     letter-spacing: 7px;
     color: var(--primary);
     font-size: 12px;
+  }
 
-}
-
-.cs-li-link{
+  .cs-li-link {
     text-decoration: none;
-    color: #4E4B66;
-}
+    color: #4e4b66;
+  }
 }
 
 /* Tablet - 768px */
@@ -1001,9 +982,9 @@ html {
       justify-content: space-between;
     }
 
-    .cs-logo{
-        text-decoration: none;
-        width: 250px;
+    .cs-logo {
+      text-decoration: none;
+      width: 250px;
     }
 
     .cs-bottom {
@@ -1011,32 +992,29 @@ html {
       justify-content: space-between;
     }
 
-    .logo-box{
-        align-items: center;
-        text-align: center;
-
+    .logo-box {
+      align-items: center;
+      text-align: center;
     }
 
-    .logo-name{
-        font-family: 'Playfair Display', serif;
-        font-size: (20px);
-        text-decoration: none;
-        color: #1c3c75;
-        font-weight: 700;
-
+    .logo-name {
+      font-family: "Playfair Display", serif;
+      font-size: (20px);
+      text-decoration: none;
+      color: #1c3c75;
+      font-weight: 700;
     }
 
-    .logo-profession{
-        font-family: 'Lato', sans-serif;
-        letter-spacing: 7px;
-        color: var(--primary);
-        font-size: 12px;
-
+    .logo-profession {
+      font-family: "Lato", sans-serif;
+      letter-spacing: 7px;
+      color: var(--primary);
+      font-size: 12px;
     }
 
-    .cs-li-link{
-        text-decoration: none;
-        color: #4E4B66;
+    .cs-li-link {
+      text-decoration: none;
+      color: #4e4b66;
     }
   }
 }
