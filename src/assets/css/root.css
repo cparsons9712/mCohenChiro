@@ -64,19 +64,33 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
+<<<<<<< HEAD
     border: none;
     border-radius: 4px;
     color: white;
+=======
+    color: #fff;
+>>>>>>> main
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
     font-family: 'Lato';
+    border-radius: 4px;
+    border: none;
   }
   .cs-button-solid:hover {
+<<<<<<< HEAD
     color: #1c3c75;
+=======
+    color: var(--primary);
+    border-radius: 4px;
+    box-shadow: 10px 5px 5px var(--primary);
+    border: 1px solid var(--primary);
+>>>>>>> main
   }
   .cs-button-solid:hover:before {
     width: 100%;
+    border-radius: 4px;
   }
   .cs-button-solid:before {
     z-index: -1;
@@ -86,7 +100,12 @@
     content: "";
     opacity: 1;
     display: block;
+<<<<<<< HEAD
     background-color: white;
+=======
+    background-color: #EFF3F8;
+    border-radius: 4px;
+>>>>>>> main
     height: 100%;
     width: 0;
     transition: width 0.3s;
