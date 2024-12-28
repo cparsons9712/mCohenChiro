@@ -228,6 +228,7 @@
     #RPsbsr-1310 .cs-picture {
         width: 93%;
         height: 94%;
+        border-radius: 4px;
     }
     #RPsbs-1310 .cs-box,
     #RPsbsr-1310 .cs-box {
