@@ -19,17 +19,6 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-
-    --button-font: "Lato", sans-serif;
-    --button-font-size: 1rem;
-    --button-line-height: clamp(2.875em, 5.5vw, 3.5em);
-    --button-padding: 0 2rem;
-    --button-min-width: 9.375rem;
-    --button-bg: var(--primary);
-    --button-color: #000;
-    --button-hover-color: #fff;
-    --button-hover-bg: #1a1a1a;
-    --button-transition: 0.3s;
   }
   .cs-topper {
     display: block;
@@ -41,7 +30,7 @@
     font-weight: 700;
     color: var(--primary);
     text-align: inherit;
-    font-family: 'Lato' sans serif;
+    font-family: 'Lato';
   }
   .cs-title {
     position: relative;
@@ -68,27 +57,31 @@
     z-index: 1;
     position: relative;
     display: inline-block;
+    background-color: var(--primary);
     width: auto;
-    padding: var(--button-padding);
+    padding: 0 1.875rem;
     text-decoration: none;
-
-    font-size: var(--button-font-size);
-    line-height: var(--button-line-height);
+    font-size: 1rem;
+    line-height: 3.125em;
     font-weight: bold;
-    color: var(--button-color);
-    background-color: var(--button-bg);
+    color: #fff;
+    transition: color 0.3s;
+    transition-delay: 0.1s;
     text-align: center;
-    font-family: var(--button-font);
-    box-sizing: border-box;
-    transition: color var(--button-transition);
+    font-family: 'Lato';
     border-radius: 4px;
+    border: none;
   }
-
   .cs-button-solid:hover {
-    color: var(--button-hover-color);
+    color: var(--primary);
+    border-radius: 4px;
+    box-shadow: 10px 5px 5px var(--primary);
+    border: 1px solid var(--primary);
+  }
+  .cs-button-solid:hover:before {
+    width: 100%;
     border-radius: 4px;
   }
-
   .cs-button-solid:before {
     z-index: -1;
     position: absolute;
@@ -97,15 +90,11 @@
     content: "";
     opacity: 1;
     display: block;
-    background-color: var(--button-hover-bg);
+    background-color: #EFF3F8;
+    border-radius: 4px;
     height: 100%;
     width: 0;
-    transition: width var(--button-transition);
-    border-radius: 4px;
-  }
-
-  .cs-button-solid:hover:before {
-    width: 100%;
+    transition: width 0.3s;
   }
   .cs-hide-on-mobile {
     display: none;
@@ -599,24 +588,49 @@ html {
   }
   #cs-navigation .cs-li-link.cs-active {
     color: var(--primary);
-  }/* Specific Styles for Navigation Buttons */
-#cs-navigation .cs-button-solid {
-  font-weight: 700;
-  color: #fff;
-  min-width: var(--button-min-width);
-}
-
-#cs-navigation .cs-button-solid:hover {
-  color: var(--button-hover-bg);
-  border-radius: 4px;
-}
-
-#cs-navigation .cs-button-solid:before {
-  background: #fff;
-  border-radius: 4px;
-}
-
-
+  }
+  #cs-navigation .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 2rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+  }
+  #cs-navigation .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #cs-navigation .cs-button-solid:hover {
+    color: #1a1a1a;
+  }
+  #cs-navigation .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #cs-navigation .cs-nav-button {
+    border-radius: 4px;
+    font-family: "Lato", sans-serif;
+    font-size: small;
+  }
 }
 /*-- -------------------------- -->
 <---   Interior Page Header     -->

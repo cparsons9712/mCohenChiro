@@ -71,24 +71,6 @@
   #RPsbsr-525 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #RPsbs-525 .cs-button-solid,
-#RPsbsr-525 .cs-button-solid {
-  font-weight: 700;
-  color: #fff;
-  min-width: var(--button-min-width);
-  font-family: var(--button-font);
-}
-
-#RPsbs-525 .cs-button-solid:hover,
-#RPsbsr-525 .cs-button-solid:hover {
-  color: var(--button-hover-bg);
-}
-
-#RPsbs-525 .cs-button-solid:before
- {
-  background: #fff;
-}
-
   #RPsbs-525 .holisticList,
   #RPsbsr-525 .holisticList {
     margin-bottom: 30px;
@@ -179,8 +161,8 @@
   #RPsbsr-525 .cs-image-group {
     font-size: min(1.1vw, 1em);
   }
-  #RPsbs-525 .cs-button-solid
- {
+  #RPsbs-525 .cs-button-solid,
+  #RPsbsr-525 .cs-button-solid {
     margin: 0;
   }
 }
@@ -207,11 +189,43 @@
     color: #1c3c75;
     font-weight: 800;
   }
-  #RPsbsr-525 .cs-button-solid:before{
-    background: #98b3d2;
+  .cs-button-second {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 2rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
   }
-
-
+  .cs-button-second:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #98b3d2;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  .cs-button-second:hover {
+    color: #1a1a1a;
+  }
+  .cs-button-second:hover:before {
+    width: 100%;
+  }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -283,22 +297,6 @@
   #sbs-1982 .cs-text {
     margin-bottom: 2rem;
   }
-  #sbs-1982 .cs-button-solid {
-
-    color: #fff;
-
-    background-color: var(--primary);
-
-  }
-  #sbs-1982 .cs-button-solid:before {
-
-    background: #fff;
-
-  }
-  #sbs-1982 .cs-button-solid:hover {
-    color: #1a1a1a;
-  }
-
   #sbs-1982 .cs-ratings {
     width: 100%;
     margin: 0;
@@ -736,25 +734,6 @@
     padding-top: 1.5rem;
     margin-bottom: 0.75rem;
     font-family: inherit;
-  }
-  #contact-1388 .cs-button-solid {
-
-    color: #fff;
-
-    background-color: var(--primary);
-
-  }
-  #contact-1388 .cs-button-solid:before {
-
-    background: #98b3d2;
-    opacity: 1;
-
-  }
-  #contact-1388 .cs-button-solid:hover {
-    color: #1a1a1a;
-  }
-  #contact-1388 .cs-button-solid:hover:before {
-    width: 100%;
   }
   #contact-1388 .cs-submit {
     width: 100%;
