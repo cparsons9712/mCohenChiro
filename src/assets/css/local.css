@@ -1,4 +1,84 @@
 /*-- -------------------------- -->
+<---     Weight Loss           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #weightAndMeta {
+    padding-top: 0;
+ 
+  }
+
+
+  #weightAndMeta .cs-image-group:before {
+    content: "";
+    left: auto;
+    right: 0em;
+  }
+  #weightAndMeta .cs-picture-large {
+    left: auto;
+    right: 3.875em;
+  }
+  #weightAndMeta .cs-picture-small {
+    right: auto;
+    left: 0;
+    border-color: #f7f7f7;
+  }
+  .listEmp {
+    color: #1c3c75;
+    font-weight: 800;
+  }
+  .cs-button-second {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 2rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+  }
+  .cs-button-second:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #98b3d2;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  .cs-button-second:hover {
+    color: #1a1a1a;
+  }
+  .cs-button-second:hover:before {
+    width: 100%;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #weightAndMeta .cs-content {
+    /* sends it to the left in the first position */
+    order: -1;
+  }
+  #weightAndMeta .cs-button-second {
+    margin: 0;
+  }
+}
+
+
+
+/*-- -------------------------- -->
 <---       Holistic Support        -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -11,7 +91,8 @@
     min-width: 1000px;
   }
   #RPsbs-525,
-  #RPsbsr-525 {
+  #RPsbsr-525,
+  #weightAndMeta {
     width: 100vw;
     padding: var(--sectionPadding);
   }
@@ -38,7 +119,8 @@
     }
   }
   #RPsbs-525 .cs-container,
-  #RPsbsr-525 .cs-container {
+  #RPsbsr-525 .cs-container,
+  #weightAndMeta .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375em;
@@ -50,7 +132,8 @@
     gap: clamp(3rem, 6vw, 4rem);
   }
   #RPsbs-525 .cs-content,
-  #RPsbsr-525 .cs-content {
+  #RPsbsr-525 .cs-content ,
+  #weightAndMeta .cs-container{
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -60,24 +143,29 @@
     align-items: flex-start;
   }
   #RPsbs-525 .cs-color,
-  #RPsbsr-525 .cs-color {
+  #RPsbsr-525 .cs-color,
+  #weightAndMeta .cs-color {
     color: var(--secondary);
   }
   #RPsbs-525 .cs-text,
-  #RPsbsr-525 .cs-text {
+  #RPsbsr-525 .cs-text,
+  #weightAndMeta .cs-text {
     margin-bottom: 1rem;
   }
   #RPsbs-525 .cs-text:last-of-type,
-  #RPsbsr-525 .cs-text:last-of-type {
+  #RPsbsr-525 .cs-text:last-of-type,
+  #weightAndMeta .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
   #RPsbs-525 .holisticList,
-  #RPsbsr-525 .holisticList {
+  #RPsbsr-525 .holisticList,
+  #weightAndMeta .holisticList{
     margin-bottom: 30px;
     margin-left: 25px;
   }
   #RPsbs-525 .cs-image-group,
-  #RPsbsr-525 .cs-image-group {
+  #RPsbsr-525 .cs-image-group,
+  #weightAndMeta .cs-image-group {
     /* this is how we can scale entire groups using ems.  Font size is tied to the view width, so as the screen gets bigger, so does the font size, and this scales up and down the elements with em values.  Then it stops growing once the font size reaches the defined value of 1em (16px which is default on the html element). Font size changes at desktop */
     font-size: min(2.3vw, .875em);
     /* all values are done in ems, not rems, so we can scale the group with a font size min/max equation */
@@ -88,11 +176,13 @@
     order: -1;
   }
   #RPsbs-525 .cs-image-group img,
-  #RPsbsr-525 .cs-image-group img {
+  #RPsbsr-525 .cs-image-group img,
+  #weightAndMeta .cs-image-group img{
     border-radius: 40px;
   }
   #RPsbs-525 .cs-image-group:before,
-  #RPsbsr-525 .cs-image-group:before {
+  #RPsbsr-525 .cs-image-group:before,
+  #weightAndMeta .cs-image-group:before{
     content: "";
     width: 11.625em;
     height: 10.0625em;
@@ -110,12 +200,14 @@
     border-radius: 40px;
   }
   #RPsbs-525 .cs-picture,
-  #RPsbsr-525 .cs-picture {
+  #RPsbsr-525 .cs-picture,
+  #weightAndMeta .cs-picture {
     display: block;
     position: absolute;
   }
   #RPsbs-525 .cs-picture img,
-  #RPsbsr-525 .cs-picture img {
+  #RPsbsr-525 .cs-picture img ,
+  #weightAndMeta .cs-picture img{
     position: absolute;
     top: 0;
     left: 0;
@@ -125,14 +217,16 @@
     object-fit: cover;
   }
   #RPsbs-525 .cs-picture-large,
-  #RPsbsr-525 .cs-picture-large {
+  #RPsbsr-525 .cs-picture-large ,
+  #weightAndMeta .cs-picture-large{
     width: 29.75em;
     height: 42.3125em;
     top: 4.375em;
     left: 3.875em;
   }
   #RPsbs-525 .cs-picture-small,
-  #RPsbsr-525 .cs-picture-small {
+  #RPsbsr-525 .cs-picture-small,
+  #weightAndMeta .cs-picture-small{
     width: 16.25em;
     height: 14.0625em;
     bottom: 0;
@@ -147,22 +241,26 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #RPsbs-525 .cs-container,
-  #RPsbsr-525 .cs-container {
+  #RPsbsr-525 .cs-container,
+  #weightAndMeta .cs-container{
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
   }
   #RPsbs-525 .cs-content,
-  #RPsbsr-525 .cs-content {
+  #RPsbsr-525 .cs-content,
+  #weightAndMeta .cs-content {
     width: 51%;
     max-width: 34.375rem;
   }
   #RPsbs-525 .cs-image-group,
-  #RPsbsr-525 .cs-image-group {
+  #RPsbsr-525 .cs-image-group,
+  #weightAndMeta .cs-image-group{
     font-size: min(1.1vw, 1em);
   }
   #RPsbs-525 .cs-button-solid,
-  #RPsbsr-525 .cs-button-solid {
+  #RPsbsr-525 .cs-button-solid,
+  #weightAndMeta .cs-button-solid {
     margin: 0;
   }
 }
