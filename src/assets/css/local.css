@@ -9,6 +9,7 @@
   }
 
 
+
   #weightAndMeta .cs-image-group:before {
     content: "";
     left: auto;
@@ -73,6 +74,11 @@
   }
   #weightAndMeta .cs-button-second {
     margin: 0;
+  }
+
+  #weightAndMeta{
+    margin-left: 40px;
+
   }
 }
 
@@ -250,8 +256,14 @@
   #RPsbs-525 .cs-content,
   #RPsbsr-525 .cs-content,
   #weightAndMeta .cs-content {
-    width: 51%;
+    width: 50%;
     max-width: 34.375rem;
+  }
+  #RPsbs-525 .cs-content {
+    margin-right: 50px;
+  }
+  #RPsbsr-525 .cs-content {
+    margin-left: 50px;
   }
   #RPsbs-525 .cs-image-group,
   #RPsbsr-525 .cs-image-group,
@@ -263,6 +275,8 @@
   #weightAndMeta .cs-button-solid {
     margin: 0;
   }
+
+
 }
 /*-- -------------------------- -->
 <---     First Visit            -->
@@ -884,4 +898,7 @@
   #contact-1388 .cs-graphic {
     display: block;
   }
+}
+#weightAndMeta {
+  padding-top: 0 !important;
 }
